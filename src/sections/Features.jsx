@@ -1,5 +1,5 @@
 import React from 'react'
-import {features} from '../constants/index.jsx';
+import {details, features} from '../constants/index.jsx';
 import { Element } from 'react-scroll';
 import Button from '../components/Button.jsx';
 const Features = () => {
@@ -26,6 +26,23 @@ const Features = () => {
                             <Button icon={button.icon}>{button.title}</Button>
                         </div>
                     ) )}
+
+                    <ul className='relative flex justify-around flex-grow px-[5%] border-2 border-s3 rounded-7xl max-md:hidden '>
+                        <div className='absolute bg-s3/20 top-[38%] left-0 right-0 w-full h-[1px] z-10'/>
+
+                        {details.map(({id,icon,title})=>(
+                            <div key={id} className=''>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+
+                            </div>
+
+                        ))}
+
+                    </ul>
+
             </div>
         </div>
        </Element>
