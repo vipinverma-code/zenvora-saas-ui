@@ -49,7 +49,7 @@ const Header = () => {
                     )}
                   >
                     <img
-                      src="/public/images/zenvora.png"
+                      src="/images/zenvora.png"
                       width={160}
                       height={500}
                       alt="logo"
