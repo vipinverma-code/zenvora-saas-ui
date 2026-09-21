@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Element } from 'react-scroll'
 import clsx from 'clsx'
 import { plans } from '../constants'
+import CountUp from 'react-countup'
 
 const Pricing = () => {
     const[monthly,setMonthly]=useState(false)
@@ -19,8 +20,7 @@ const Pricing = () => {
                 <button
                   className={clsx("pricing-head_btn", monthly && "text-p4")}
                   onClick={() => setMonthly(true)}
-                >
-                  Monthly
+                >  Monthly
                 </button>
 
                 <button
@@ -39,28 +39,78 @@ const Pricing = () => {
               </div>
               <div className="pricing-bg">
                 <img
-                  src="/images/bg-outlines.svg" width={960} height={380} 
+                  src="/images/bg-outlines.svg"
+                  width={960}
+                  height={380}
                   alt="outline"
                   className="relative z-2"
                 />
                 <img
-                  src="/images/bg-outlines-fill.png" width={960} height={380}
+                  src="/images/bg-outlines-fill.png"
+                  width={960}
+                  height={380}
                   alt="outline"
                   className="absolute inset-0 opacity-5 mix-blend-soft-light"
                 />
               </div>
             </div>
             {/* pricing section */}
-            <div>
-               {plans.map(({plan,index,title,id})=>(
-                <div key={id} className=''>
-                    {title}
+            <div className="scroll-hide relative z-2 -mt-12 flex items-start max-xl:gap-5 max-xl:overflow-uato max-xl:pt-16">
+              {plans.map(
+                ({  title, id, caption, features, icon, logo,priceMonthly,priceYearly},index) => (
+                  <div
+                    key={id}
+                    className="pricing-plan_first pricing-plan_last pricing-plan_odd pricing-plan_even relative border-2 p-7 max-xl:min-w-80 max-lg:rounded-3xl xl:w-[calc(33.33%+2px)]"
+                  >
+                    {index === 1 && (
+                      <div className="g4 absolute h-330 left-0 right-0 top-0 z-1 rounded-tl-3xl rounded-tr-3xl " />
+                    )}
+                    <div
+                      className={clsx(
+                        "absolute left-0 right-0 z-2 flex items-center justify-center",
+                        index === 1 ? "-top-6" : "-top6 xl:-top-11",
+                      )}
+                    >
+                      <img
+                        src={logo}
+                        alt={title}
+                        className={clsx(
+                          `object-contain drop-shadow-2xl`,
+                          index === 1 ? "size-[120px]" : "size-[88px]",
+                        )}
+                      />
+                    </div>
+                    <div
+                      className={clsx(
+                        "relative flex flex-col items-center",
+                        index === 1 ? "pt-24" : "pt-12",
+                      )}
+                    >
+                      <div
+                        className={clsx(
+                          "small-2 rounded-20 relative z-2 mx-auto mb-6 border-2 px-4 py-1.5 uppercase",
+                          index === 1
+                            ? "border-p3 text-p3"
+                            : "border-p1 text-p1",
+                        )}
+                      >
+                        {title}
 
-                </div>
+                      </div>
+                      <div className='relative z-2 flex items-center justify-center'>
+                        <div className={clsx('h-num flex items-start', index === 1 ? 'text-p3':'text-p4')}>
+                            
+                            $ <CountUp start={priceMonthly} end={monthly ? priceMonthly :priceYearly}
+                            duration={0.4} useEasing={false} preserveValue/>
+                          
+                        </div>
 
-               ))}
+                      </div>
+                    </div>
+                  </div>
+                ),
+              )}
             </div>
-
           </div>
         </Element>
       </section>
