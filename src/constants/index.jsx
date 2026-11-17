@@ -49,63 +49,63 @@ export const details = [
 export const faq = [
   {
     id: "0",
-    question: "How easy is it to setup Xora?",
+    question: "How easy is it to setup Zenvora?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Getting started with Zenvora is simple and straightforward. Create your account, choose a plan, and follow the guided setup process to get your workspace ready in just a few minutes.",
   },
   {
     id: "1",
-    question: "Can I integrate Xora with other platforms?",
+    question: "Can I integrate Zenvora with other platforms?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! Zenvora is designed to fit into your existing workflow. You can connect it with supported third-party tools and platforms to streamline your work and keep everything organized.",
   },
   {
     id: "2",
     question: "How often do you add new content?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We regularly update Zenvora with new features, improvements, and resources to enhance your experience and help you get the most out of the platform.",
   },
   {
     id: "3",
-    question: "What your refund policy?",
+    question: "What is your refund policy?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "If you're not satisfied with your subscription, you can contact our support team for assistance. Refund eligibility depends on the applicable subscription terms and conditions.",
   },
   {
     id: "4",
     question: "Do you have corporate plans?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Yes! We offer flexible plans for businesses and larger teams. Contact our team to discuss your organization's requirements and find a suitable solution.",
   },
   {
     id: "5",
     question: "What happens when I’m out of storage?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "If you reach your storage limit, you may need to upgrade your plan or free up existing space to continue uploading new files. Your existing data remains available according to your plan's terms.",
   },
   {
     id: "6",
     question: "Can I upgrade my plan?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Absolutely! You can upgrade your subscription whenever your needs change. Choose a higher plan to access additional features, more storage, and greater flexibility.",
   },
   {
     id: "7",
     question: "How do I invite my team?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "Inviting your team is easy. Open your workspace settings, go to the team or members section, and send invitations using your teammates' email addresses.",
   },
   {
     id: "8",
     question: "Do you offer training for individuals and teams?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "We aim to make onboarding easy with helpful resources and guidance. For team-specific training or onboarding assistance, you can contact our support team.",
   },
   {
     id: "9",
-    question: "I’m locked out of my account what do I do?",
+    question: "I’m locked out of my account. What do I do?",
     answer:
-      "Absolutely! Not only you can upgrade your plan at any time but you also get a prorated discount giving you maximum value for your subscription.",
+      "First, try resetting your password using the 'Forgot Password' option on the login page. If you still cannot access your account, contact our support team for help recovering access.",
   },
 ];
 
@@ -164,7 +164,7 @@ export const testimonials = [
     role: "Globalnomads",
     avatarUrl: "/images/testimonials/jessica-saunders.png",
     comment:
-      "Xora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
+      "Zenvora's customer support is second to none! They’re like my tech superheroes, always there when I need them.",
   },
   {
     id: "1",
@@ -196,7 +196,7 @@ export const testimonials = [
     role: "Floclips",
     avatarUrl: "/images/testimonials/becky-snider.png",
     comment:
-      "Switched to Xora last month, and I'm already seeing results. Best decision for our team!",
+      "Switched to Zenvora last month, and I'm already seeing results. Best decision for our team!",
   },
   {
     id: "5",
